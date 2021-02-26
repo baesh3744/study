@@ -4,7 +4,7 @@
 > 초기 설정되어 있는 root 계정의 패스워드 타입때문에 발생한다.
 
 ```
->> sudo mariadb -u root  // sudo를 사용하여 root 계정으로 mariadb에 접속한다.
+$ sudo mariadb -u root  // sudo를 사용하여 root 계정으로 mariadb에 접속한다.
 
 MariaDB [(none)]> use mysql;
 
