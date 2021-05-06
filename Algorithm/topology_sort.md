@@ -86,7 +86,7 @@ def topology_sort() -> bool:
 
 <br />
 
-## 출처
+## 참고링크
 
 ---
 

@@ -142,7 +142,7 @@ def get_lis_length_by_bisect(n: int, seq: list[int]) -> int:
 
 <br>
 
-## 출처
+## 참고링크
 
 ---
 

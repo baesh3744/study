@@ -110,7 +110,7 @@ def knapsack(capacity: int, n: int, weights: list[int], values: list[int]) -> in
 
 <br>
 
-## 출처
+## 참고링크
 
 ---
 
