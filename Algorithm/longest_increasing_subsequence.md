@@ -126,7 +126,7 @@ def get_lis_length_by_binary_search(n: int, seq: list[int]) -> int:
 ```python
 from bisect import bisect_left
 
-def get_lis_length_by_bisect(n: int, seq: list[int]) -> int:
+def get_lis_length_by_bisect(seq: list[int]) -> int:
     lis: list[int] = []
 
     for num in seq:
@@ -136,6 +136,32 @@ def get_lis_length_by_bisect(n: int, seq: list[int]) -> int:
             lis[bisect_left(lis, num)] = num
 
     return len(lis)
+```
+
+<br>
+
+<br>
+
+## LIS를 구하는 방법
+
+---
+
+```python
+def get_lis(n: int, nums: list[int]) -> list[int]:
+    # 위의 3가지 방법 중 한 가지를 이용하여
+    #   lis_length: lis의 길이
+    #   lis_indexes: nums의 각각의 요소들이 lis의 어느 index에 들어갈 수 있는지 저장한 리스트
+    # 구한다.
+    lis_length, lis_indexes = get_lis_length(nums)
+
+    lis: list[int] = [-1 for _ in range(lis_length)]
+    idx: int = lis_length - 1
+    for pointer in range(n - 1, -1, -1):
+        if lis_indexes[pointer] == idx:
+            lis[idx] = nums[pointer]
+            idx -= 1
+
+    return lis
 ```
 
 <br>
