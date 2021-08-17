@@ -62,10 +62,10 @@ def kmp(text: str, pattern: str) -> list[int]:
     start_list = []
     for index, char in enumerate(text):
         while pattern_index > 0 and char != pattern[pattern_index]:
-            pattern_index = pi[pattern_index]
+            pattern_index = pi[pattern_index - 1]
         if char == pattern[pattern_index]:
             if pattern_index == patter_length - 1:
-                start_list.append(index - pattern_index + 1)
+                start_list.append(index - pattern_index + 1)  # 시작 위치를 1로 했을 때
                 pattern_index = pi[pattern_index]
             else:
                 pattern_index += 1
