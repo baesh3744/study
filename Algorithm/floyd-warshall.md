@@ -1,8 +1,6 @@
-# 플로이드-와샬(Floyd-Warshall)
+# 플로이드-와샬 (Floyd-Warshall)
 
 ## 플로이드-와샬 알고리즘이란?
-
----
 
 -   모든 정점 사이의 최단 경로를 찾는 알고리즘이다.
 
@@ -10,11 +8,7 @@
 
 <br>
 
-<br>
-
 ## 플로이드-와샬 알고리즘 과정
-
----
 
 1. 최단 경로를 저장하는 배열 arr을 생성한다.
 
@@ -28,11 +22,7 @@
 
 <br>
 
-<br>
-
 ## 플로이드-와샬 알고리즘 예시
-
----
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmMV7e%2FbtqRcIuiDlv%2FYejbMLARvL6cEBQ7vTs4Y1%2Fimg.png" width="300">
 
@@ -90,11 +80,7 @@
 
 <br>
 
-<br>
-
 ## Python Code
-
----
 
 ```python
 import sys
@@ -118,10 +104,6 @@ def floyd_warshall(n: int, inputs: list[list[int]]) -> list[list[int]]:
 
 <br>
 
-<br>
-
-## References
-
----
+## Reference
 
 https://bgspro.tistory.com/38

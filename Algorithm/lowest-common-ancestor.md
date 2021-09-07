@@ -57,8 +57,8 @@ def lca(u: int, v: int) -> int:
 
 ## 개선된 LCA 알고리즘 (DP)
 
-- 부모를 거슬러 올라갈 때 2의 제곱 형태로 거슬러 올라가면 O(logN)의 시간 복잡도를 보장할 수 있다.
-- 이를 위해 각 노드에 대해 2^i번째 부모를 저장한다.
+-   부모를 거슬러 올라갈 때 2의 제곱 형태로 거슬러 올라가면 O(logN)의 시간 복잡도를 보장할 수 있다.
+-   이를 위해 각 노드에 대해 2^i번째 부모를 저장한다.
 
 <br>
 
@@ -113,6 +113,6 @@ def lca(u: int, v: int) -> int:
 
 <br>
 
-## References
+## Reference
 
 https://www.youtube.com/watch?v=O895NbxirM8

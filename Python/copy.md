@@ -1,8 +1,6 @@
-# Mutable vs immutable
+# 얕은 복사 (Shallow Copy) vs 깊은 복사 (Deep Copy)
 
-출처
-
-https://wikidocs.net/16038
+## Mutable vs Immutable
 
 | class     | 설명                                     | 구분      |
 | --------- | ---------------------------------------- | --------- |
@@ -20,15 +18,9 @@ https://wikidocs.net/16038
 -   immutable은 값의 변경을 시도하면 에러가 발생한다.
 -   값의 재할당은 mutable/immutable과는 다른 문제이다.
 
-<br />
+<br>
 
-<br />
-
-# 얕은 복사(Shallow Copy) vs 깊은 복사(Deep Copy)
-
-## 얕은 복사(Shallow Copy) - slicing, copy.copy()
-
----
+## 얕은 복사 (Shallow Copy) - slicing, copy.copy()
 
 ```
 >> a = [1, 2, 3]
@@ -120,13 +112,9 @@ id(a) 값과 id(b) 값은 다르지만, 내부의 객체 id(a[0])과 id(b[0])은
 
 하지만, a[1]에 값을 변경하면, b[1]도 따라서 변경된다.
 
-<br />
-
-<br />
+<br>
 
 ## 깊은 복사 (deep copy) - copy.deepcopy()
-
----
 
 내부의 객체들까지 모두 새롭게 복사되는 것이다.
 
@@ -142,3 +130,9 @@ id(a) 값과 id(b) 값은 다르지만, 내부의 객체 id(a[0])과 id(b[0])은
 >> b
 [[1, 2], [3, 4]]
 ```
+
+<br>
+
+## Reference
+
+https://wikidocs.net/16038

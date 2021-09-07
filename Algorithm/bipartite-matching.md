@@ -1,8 +1,6 @@
-## 이분 매칭(Bipartite Matching)
+# 이분 매칭 (Bipartite Matching)
 
----
-
-<br />
+## 이분 매칭 과정
 
 ![bipartite_matching_1](./images/bm1.png)
 
@@ -14,26 +12,18 @@ O(VE) 시간으로 최대 매칭 개수를 구하는 최적화가 존재한다. 
 
 A 그룹의 정점을 순서대로 살펴보며 간선으로 연결된 B 그룹의 정점 중 매칭이 안 된 정점이 있으면 매칭을 한다.
 
-<br />
-
 ![bipartite_matching_2](./images/bm2.png)
 
 처음엔 A-2 매칭이 바로 이어진다.
-
-<br />
 
 ![bipartite_matching_3](./images/bm3.png)
 
 B와 연결된 정점은 2, 3, 4인데, 그 중 2는 A와 매칭된 상태이다.  
 A는 2 대신 5와 매칭이 가능하므로, A-2 매칭이 취소되고 A-5, B-2 매칭이 생성된다.
 
-<br />
-
 ![bipartite_matching_4](./images/bm4.png)
 
 C-1 매칭이 생성된다.
-
-<br />
 
 ![bipartite_matching_5](./images/bm5.png)
 
@@ -41,8 +31,6 @@ D-1 매칭이 생성된다.
 C-1 매칭은 소거되고 C-5 매칭이 생성된다.  
 A-5 매칭은 소거된고 A-2 매칭이 생성된다.  
 B-2 매칭은 소거되고 B-3 매칭이 생성된다.
-
-<br />
 
 E의 경우, 매칭을 만들 수가 없다.  
 유일한 인접 정점이 2이므로, E-2가 생성되면,  
@@ -54,9 +42,11 @@ E의 경우, 매칭을 만들 수가 없다.
 
 이렇게 최대 매칭은 4이다.
 
-<br />
+<br>
 
-```
+## C++ Code
+
+```cpp
 // N - A 그룹 크기
 // M - B 그룹 크기
 // A[i], B[i] - 각 정점에 매칭된 반대편 정점 번호

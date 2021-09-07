@@ -1,7 +1,5 @@
 # 트리의 지름 (Diameter of tree)
 
-<br>
-
 ## 트리의 지름이란?
 
 트리에서 어떤 두 노드를 선택해서 양쪽으로 쫙 당길 때, 가장 길게 늘어나는 경우가 있을 것이다. 이때 트리의 모든 노드들은 이 두 노드를 지름의 끝 점으로 하는 원 안에 들어가게 된다. 이런 두 노드 사이의 경로의 길이를 트리의 지름이라고 한다.
@@ -60,8 +58,7 @@ def get_diameter_of_tree() -> int:
 
 <br>
 
-## References
+## Reference
 
 https://www.acmicpc.net/problem/1967
-
 https://velog.io/@coding_egg/%EB%B0%B1%EC%A4%80-1991%EB%B2%88-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%A7%80%EB%A6%84-python-%ED%8C%8C%EC%9D%B4%EC%8D%AC

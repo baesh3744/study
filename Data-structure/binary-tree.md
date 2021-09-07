@@ -1,8 +1,6 @@
-# 트리 (Tree)
+# 이진 트리 (Binary Tree)
 
 ## 이진 트리
-
----
 
 ```python
 class Node:
@@ -69,11 +67,7 @@ if __name__ == "__main__":
 
 <br>
 
-<br>
-
 ## 스레드 이진 트리
-
----
 
 -   스레드 이진 트리는 순회에서 스택을 이용하지 않고 포인터를 이용하여 순회의 시간을 단축시키는 방식이다.
 
@@ -129,11 +123,7 @@ class ThreadBinaryTree:
 
 <br>
 
-<br>
-
 ## 이진 탐색 트리
-
----
 
 이진 탐색 트리는 다음과 같은 규칙을 가지고 있다.
 
@@ -225,10 +215,6 @@ class BinarySearchTree:
 
 <br>
 
-<br>
-
-## References
-
----
+## Reference
 
 https://blex.me/@baealex/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%9C-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC

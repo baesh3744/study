@@ -67,6 +67,6 @@ def update(node: int, start: int, end: int, index: int, diff: int) -> None:
 
 <br>
 
-## References
+## Reference
 
 https://www.acmicpc.net/blog/view/9

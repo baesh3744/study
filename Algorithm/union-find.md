@@ -1,20 +1,16 @@
-# Disjoint-set (union-find)
+# Union-Find
 
-## Disjoint-set이란?
+## Union-Find란?
 
----
+-   Disjoint-set이란 서로 중복되지 않는 부분 집합들로 나눠진 원소들에 대한 정보를 저장하고 조작하는 자료구조이다.
 
--   서로 중복되지 않는 부분 집합들로 나눠진 원소들에 대한 정보를 저장하고 조작하는 자료구조
+-   Union-Find란 Disjoint-set을 표현할 때 사용하는 알고리즘이다.
 
--   다수의 노드들 중에서 연결된 노드를 찾거나 노드들을 합칠 때 사용
-
-<br>
+-   다수의 노드들 중에서 연결된 노드를 찾거나 노드들을 합칠 때 사용한다.
 
 <br>
 
-## Disjoint-set 구현
-
----
+## Union-Find 연산
 
 -   초기화: N개의 원소가 각각의 집합에 포함되어 있도록 초기화
 
@@ -183,10 +179,6 @@ class DisjointSet:
 
 <br>
 
-<br>
-
-## References
-
----
+## Reference
 
 https://brownbears.tistory.com/460

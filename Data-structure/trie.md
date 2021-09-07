@@ -1,28 +1,18 @@
-# Trie (트라이)
+# 트라이 (Trie)
 
 ## 트라이란?
-
----
 
 트라이란 문자열을 저장하고 효율적으로 탐색하기 위한 트리 형태의 자료구조이다. 래딕스 트리 (radix tree) 또는 접두사 트리 (prefix tree) 라고도 한다.
 
 <br>
 
-<br>
-
 ## 트라이의 사용 목적
-
----
 
 문자열을 탐색할 때, 단순하게 하나씩 비교하면서 탐색하는 것보다 시간복잡도 측면에서 훨씬 효율적이다. 그러나 각 노드에서 자식들에 대한 포인터들을 배열로 모두 저장하고 있다는 점에서 저장 공간의 크기가 크다는 단점이 있다.
 
 <br>
 
-<br>
-
 ## 시간복잡도
-
----
 
 -   제일 긴 문자열의 길이를 L, 문자열의 수를 M이라 한다.
 
@@ -33,11 +23,7 @@
 
 <br>
 
-<br>
-
 ## 트라이 구조 예시
-
----
 
 ![https://media.vlpt.us/images/gojaegaebal/post/749ec3ff-e678-48e6-b20e-3f73ae288fed/image.png](https://media.vlpt.us/images/gojaegaebal/post/749ec3ff-e678-48e6-b20e-3f73ae288fed/image.png)
 [이미지 출처]https://youseop.github.io/2020-11-09-BAEKJOON-14425_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%A7%91%ED%95%A9
@@ -70,11 +56,7 @@
 
 <br>
 
-<br>
-
-## 구현
-
----
+## Python Code
 
 ```python
 # key: 해당 노드의 문자
@@ -114,10 +96,6 @@ class Trie:
 
 <br>
 
-<br>
-
-## References
-
----
+## Reference
 
 https://velog.io/@gojaegaebal/210126-%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%8050%EC%9D%BC%EC%B0%A8-%ED%8A%B8%EB%9D%BC%EC%9D%B4Trie-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%9C%EB%85%90-%EB%B0%8F-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0feat.-Class

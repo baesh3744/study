@@ -1,8 +1,6 @@
-# 위상 정렬(Topology Sort)
+# 위상 정렬 (Topology Sort)
 
 ## 위상 정렬이란?
-
----
 
 -   위상 정렬은 **순서가 정해져있는 작업**을 차례로 수행해야 할 때, 그 순서를 결정해주는 알고리즘이다.
 
@@ -12,13 +10,9 @@
 
 -   위상 정렬을 수행하는 알고리즘은 두 가지가 존재한다. **스택(Stack)** 을 이용한 방식과 **큐(Queue)** 를 이용한 방식이다.
 
-<br />
-
-<br />
+<br>
 
 ## 위상 정렬 알고리즘 (with Queue)
-
----
 
 1. 진입차수가 0인 정점을 큐에 삽입한다. 진입차수란 한 정점으로 들어오는 간선의 개수를 말한다.
 
@@ -30,21 +24,15 @@
 
 3. 모든 노드를 방문하기 전에 큐가 빈다면 사이클이 존재하는 것이고, 모든 노드를 방문했다면 큐에서 꺼낸 순서가 위상 정렬의 결과이다.
 
-<br />
-
 ![https://gmlwjd9405.github.io/images/algorithm-topological-sort/topological-sort-example.png
 ](https://gmlwjd9405.github.io/images/algorithm-topological-sort/topological-sort-example.png)
 [이미지 출처] https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
 
-<br />
-
-<br />
+<br>
 
 ## Python Code
 
----
-
-```
+```python
 from collections import deque
 
 
@@ -82,16 +70,10 @@ def topology_sort() -> bool:
     return True
 ```
 
-<br />
+<br>
 
-<br />
-
-## 참고링크
-
----
+## Reference
 
 https://m.blog.naver.com/ndb796/221236874984
-
 https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
-
 https://freedeveloper.tistory.com/390

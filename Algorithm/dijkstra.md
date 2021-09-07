@@ -1,8 +1,6 @@
-# 다익스트라(Dijkstra)
+# 다익스트라 (Dijkstra)
 
 ## 다익스트라 알고리즘이란?
-
----
 
 -   하나의 시작 정점으로부터 다른 모든 정점까지의 최단 경로를 찾는 최단 경로 알고리즘
 
@@ -14,11 +12,7 @@
 
 <br>
 
-<br>
-
 ## 다익스트라 알고리즘 과정
-
----
 
 1.  초기화
 
@@ -42,11 +36,7 @@
 
 <br>
 
-<br>
-
 ## 다익스트라 알고리즘 예시
-
----
 
 ![https://www.bogotobogo.com/python/images/Dijkstra/graph_diagram.png](https://www.bogotobogo.com/python/images/Dijkstra/graph_diagram.png)
 
@@ -134,11 +124,7 @@
 
 <br>
 
-<br>
-
 ## Python Code
-
----
 
 ```python
 # graph = {
@@ -177,10 +163,6 @@ def dijkstra(graph: dict[str, dict[str, int]], start: str) -> dict[str, int]:
 
 <br>
 
-<br>
-
-## References
-
----
+## Reference
 
 https://www.fun-coding.org/Chapter20-shortest-live.html

@@ -1,8 +1,6 @@
-# 가장 긴 증가하는 부분수열(Longest Increasing Subsequence)
+# 가장 긴 증가하는 부분수열 (LIS, Longest Increasing Subsequence)
 
 ## DP를 이용한 방법 - O(N^2)
-
----
 
 -   cache[i]: i번째 원소를 마지막으로 하는 LIS의 길이
 -   cache[i]는 0 ~ i - 1까지의 원소들에서 i번째 원소보다 값이 작은 것들 중에서 가장 큰 cache값 + 1이다.
@@ -27,11 +25,7 @@ def get_lis_length_by_dp(n: int, seq: list[int]) -> int:
 
 <br>
 
-<br>
-
 ## 이분탐색을 이용한 방법 - O(NlogN)
-
----
 
 -   이 알고리즘은 다음과 같은 리스트 L을 업데이트하며 동작한다.
 
@@ -90,8 +84,6 @@ def get_lis_length_by_dp(n: int, seq: list[int]) -> int:
 
 ### 이분 탐색을 직접 구현한 방법
 
----
-
 ```python
 def get_lis_length_by_binary_search(n: int, seq: list[int]) -> int:
     lis: list[int] = []
@@ -117,9 +109,7 @@ def get_lis_length_by_binary_search(n: int, seq: list[int]) -> int:
 
 <br>
 
-### bisect을 이용한 방법 (python)
-
----
+### bisect을 이용한 방법 (Python)
 
 -   lower bound 계산 과정을 bisect.bisect_left() 함수로 구한다.
 
@@ -140,11 +130,7 @@ def get_lis_length_by_bisect(seq: list[int]) -> int:
 
 <br>
 
-<br>
-
 ## LIS를 구하는 방법
-
----
 
 ```python
 def get_lis(n: int, nums: list[int]) -> list[int]:
@@ -166,12 +152,7 @@ def get_lis(n: int, nums: list[int]) -> list[int]:
 
 <br>
 
-<br>
-
-## 참고링크
-
----
+## Reference
 
 https://namhandong.tistory.com/135
-
 https://seungkwan.tistory.com/8

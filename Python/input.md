@@ -2,8 +2,6 @@
 
 ## 연속된 숫자 하나씩 입력받기
 
----
-
 ```python
 >>> nums = list(map(int, input()))  # 123456
 >>> nums
@@ -12,11 +10,7 @@
 
 <br>
 
-<br>
-
 ## 여러 번 입력받기
-
----
 
 -   for문을 통해 input()을 여러 번 실행해야 하는 경우, input()으로 인한 시간 초과가 발생할 수 있다.
 -   input() 대신 sys.stdin.readline() 사용한다.
@@ -30,8 +24,6 @@
 <br>
 
 ### sys.stdin.readline()과 \n
-
----
 
 ```python
 >>> num = int(sys.stdin.readline())

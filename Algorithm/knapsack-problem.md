@@ -1,18 +1,12 @@
-# 배낭 문제(Knapsack Problem)
+# 배낭 문제 (Knapsack Problem)
 
 ## 배낭 문제란?
-
----
 
 -   담을 수 있는 최대 무게가 정해진 배낭과 함께 각각의 무게와 가치가 주어진 아이템의 집합이 주어졌을 때, 배낭에 담은 아이템들의 가치의 합이 최대가 되도록 하는 아이템들의 부분집합을 찾는 문제이다.
 
 <br>
 
-<br>
-
-## 분할 가능한 배낭 문제(Fractional Knapsack Problem)
-
----
+## 분할 가능한 배낭 문제 (Fractional Knapsack Problem)
 
 -   아이템을 쪼갤 수 있다고 가정한다. 무게당 가치가 높은 물건부터 담으면 된다.
 -   Greedy algorithm으로 해결할 수 있다.
@@ -41,11 +35,7 @@ def knapsack(capacity: int, weights: list[int], values: list[int]) -> int:
 
 <br>
 
-<br>
-
-## 0-1 배낭 문제(0-1 Knapsack Problem)
-
----
+## 0-1 배낭 문제 (0-1 Knapsack Problem)
 
 -   아이템을 쪼갤 수 없다고 가정한다.
 -   Dynamic Programming으로 해결할 수 있다.
@@ -108,12 +98,7 @@ def knapsack(capacity: int, n: int, weights: list[int], values: list[int]) -> in
 
 <br>
 
-<br>
-
-## 참고링크
-
----
+## Reference
 
 https://comdoc.tistory.com/entry/35-%EB%B0%B0%EB%82%AD%EB%AC%B8%EC%A0%9CKnapsack-problem-%ED%8C%8C%EC%9D%B4%EC%8D%AC
-
 https://dojinkimm.github.io/algorithm/2019/10/19/dp-2.html

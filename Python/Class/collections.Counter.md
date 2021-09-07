@@ -2,8 +2,6 @@
 
 ## Dictionary를 이용한 카운팅
 
----
-
 ```python
 def count_word(word: str) -> dict[str, int]:
     counter: dict[str, int] = {}
@@ -20,11 +18,7 @@ count_word('hello world')
 
 <br>
 
-<br>
-
 ## collections.Counter를 이용한 카운팅
-
----
 
 ```python
 >>> from collections import Counter
@@ -43,8 +37,6 @@ Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 
 ### elements()
 
----
-
 ```python
 >>> counter = Counter('hello world')
 >>> list(c.elements())
@@ -56,8 +48,6 @@ Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 <br>
 
 ### most_common()
-
----
 
 ```python
 >>> counter = Counter('hello world')
@@ -72,10 +62,6 @@ Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 
 <br>
 
-<br>
-
-## 참고링크
-
----
+## Reference
 
 https://docs.python.org/3/library/collections.html#collections.Counter

@@ -179,14 +179,10 @@ def prim(start_node: str) -> list[tuple[str, str, int]]:
 
 <br>
 
-## References
+## Reference
 
 https://gmlwjd9405.github.io/2018/08/28/algorithm-mst.html
-
 https://gmlwjd9405.github.io/2018/08/29/algorithm-kruskal-mst.html
-
 https://gmlwjd9405.github.io/2018/08/30/algorithm-prim-mst.html
-
 https://www.fun-coding.org/Chapter20-kruskal-live.html
-
 https://www.fun-coding.org/Chapter20-prim-live.html
