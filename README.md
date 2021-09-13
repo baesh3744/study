@@ -27,7 +27,7 @@
 
 <br>
 
-## Web
+## JavaScript Framework
 
 ### Gatsby
 
@@ -41,6 +41,8 @@ https://edu.goorm.io/learn/lecture/25881/%EB%88%84%EA%B5%AC%EB%82%98-%EB%B8%94%E
 https://www.gatsbyjs.com/
 
 <br>
+
+## JavaScript Library
 
 ### React
 
@@ -63,6 +65,12 @@ https://ko.reactjs.org/
 -   [배열 -> 문자열][list-to-string]
 -   [거듭제곱][pow]
 
+<br>
+
+## Web
+
+-   [검색 엔진 최적화 (SEO, Search Engine Optimization)][seo]
+
 [articulation-point-and-bridge]: ./Algorithm/articulation-point-and-bridge.md
 [bipartite-matching]: ./Algorithm/bipartite-matching.md
 [convex-hull]: ./Algorithm/convex-hull.md
@@ -76,16 +84,17 @@ https://ko.reactjs.org/
 [scc]: ./Algorithm/strongly-connected-component.md
 [topology-sort]: ./Algorithm/topology-sort.md
 [union-find]: ./Algorithm/union-find.md
-[binary-tree]: ./Data-structure/binary-tree.md
-[minimum-spanning-tree]: ./Data-structure/minimum-spanning-tree.md
-[segment-tree]: ./Data-structure/segment-tree.md
-[trie]: ./Data-sturcture/trie.md
-[creating-routes]: ./Web/Gatsby/Routing/creating-routes.md
-[link-api]: ./Web/Gatsby/Routing/Link-API.md
-[hook]: ./Web/React/hook.md
+[binary-tree]: ./Data-Structure/binary-tree.md
+[minimum-spanning-tree]: ./Data-Structure/minimum-spanning-tree.md
+[segment-tree]: ./Data-Structure/segment-tree.md
+[trie]: ./Data-Structure/trie.md
+[creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
+[link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
+[hook]: ./JavaScript-Library/React/hook.md
 [collections.counter]: ./Python/Class/collections.Counter.md
 [bisect]: ./Python/Module/bisect.md
 [copy]: ./Python/copy.md
 [input]: ./Python/input.md
 [list-to-string]: ./Python/list-to-string.md
 [pow]: ./Python/pow.md
+[seo]: ./Web/seo.md
