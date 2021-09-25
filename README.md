@@ -27,6 +27,12 @@
 
 <br>
 
+## Development Common Sense
+
+-   [객체 지향 프로그래밍][oop]
+
+<br>
+
 ## JavaScript Framework
 
 ### Gatsby
@@ -88,6 +94,7 @@ https://ko.reactjs.org/
 [minimum-spanning-tree]: ./Data-Structure/minimum-spanning-tree.md
 [segment-tree]: ./Data-Structure/segment-tree.md
 [trie]: ./Data-Structure/trie.md
+[oop]: ./Development-Common-Sense/oop.md
 [creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
 [link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
 [hook]: ./JavaScript-Library/React/hook.md
