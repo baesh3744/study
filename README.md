@@ -76,6 +76,7 @@ https://ko.reactjs.org/
 ## Web
 
 -   [검색 엔진 최적화 (SEO, Search Engine Optimization)][seo]
+-   [RESTful API][restful-api]
 
 [articulation-point-and-bridge]: ./Algorithm/articulation-point-and-bridge.md
 [bipartite-matching]: ./Algorithm/bipartite-matching.md
@@ -105,3 +106,4 @@ https://ko.reactjs.org/
 [list-to-string]: ./Python/list-to-string.md
 [pow]: ./Python/pow.md
 [seo]: ./Web/seo.md
+[restful-api]: ./Web/restful-api.md
