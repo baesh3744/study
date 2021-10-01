@@ -76,6 +76,7 @@ https://ko.reactjs.org/
 ## Web
 
 -   [검색 엔진 최적화 (SEO, Search Engine Optimization)][seo]
+-   [HTTP와 HTTPS][http-and-https]
 -   [HTTP Method][http-method]
 -   [RESTful API][restful-api]
 -   [TCP vs. UDP][tcp-vs-udp]
@@ -111,3 +112,4 @@ https://ko.reactjs.org/
 [http-method]: ./Web/http-method.md
 [restful-api]: ./Web/restful-api.md
 [tcp-vs-udp]: ./Web/tcp-vs-udp.md
+[http-and-https]: ./Web/http-and-https.md
