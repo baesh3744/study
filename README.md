@@ -82,6 +82,7 @@ https://ko.reactjs.org/
 ## Web
 
 -   [검색 엔진 최적화 (SEO, Search Engine Optimization)][seo]
+-   [CSR vs. SSR][csr-vs-ssr]
 -   [HTTP와 HTTPS][http-and-https]
 -   [HTTP Method][http-method]
 -   [RESTful API][restful-api]
@@ -116,6 +117,7 @@ https://ko.reactjs.org/
 [list-to-string]: ./Python/list-to-string.md
 [pow]: ./Python/pow.md
 [seo]: ./Web/seo.md
+[csr-vs-ssr]: ./Web/csr-vs-ssr.md
 [http-method]: ./Web/http-method.md
 [restful-api]: ./Web/restful-api.md
 [tcp-vs-udp]: ./Web/tcp-vs-udp.md
