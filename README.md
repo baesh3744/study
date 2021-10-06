@@ -86,6 +86,7 @@ https://ko.reactjs.org/
 -   [HTTP와 HTTPS][http-and-https]
 -   [HTTP Method][http-method]
 -   [RESTful API][restful-api]
+-   [SPA / MPA / PWA][spa-mpa-pwa]
 -   [TCP vs. UDP][tcp-vs-udp]
 
 [articulation-point-and-bridge]: ./Algorithm/articulation-point-and-bridge.md
@@ -120,5 +121,6 @@ https://ko.reactjs.org/
 [csr-vs-ssr]: ./Web/csr-vs-ssr.md
 [http-method]: ./Web/http-method.md
 [restful-api]: ./Web/restful-api.md
+[spa-mpa-pwa]: ./Web/spa-mpa-pwa.md
 [tcp-vs-udp]: ./Web/tcp-vs-udp.md
 [http-and-https]: ./Web/http-and-https.md
