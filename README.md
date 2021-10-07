@@ -33,6 +33,12 @@
 
 <br>
 
+## HTML
+
+-   [DOCTYPE][doctype]
+
+<br>
+
 ## JavaScript Framework
 
 ### Gatsby
@@ -107,6 +113,7 @@ https://ko.reactjs.org/
 [segment-tree]: ./Data-Structure/segment-tree.md
 [trie]: ./Data-Structure/trie.md
 [oop]: ./Development-Common-Sense/oop.md
+[doctype]: ./HTML/doctype.md
 [creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
 [link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
 [hook]: ./JavaScript-Library/React/hook.md
