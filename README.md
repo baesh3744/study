@@ -36,6 +36,7 @@
 ## HTML
 
 -   [DOCTYPE][doctype]
+-   [HTML/XML/XHTML][html-xml-xhtml]
 -   [쿼크 모드(quirks mode)와 표준 모드(standards mode)][quirks-mode-and-standards-mode]
 
 <br>
@@ -115,6 +116,7 @@ https://ko.reactjs.org/
 [trie]: ./Data-Structure/trie.md
 [oop]: ./Development-Common-Sense/oop.md
 [doctype]: ./HTML/doctype.md
+[html-xml-xhtml]: ./HTML/html-xml-xhtml.md
 [quirks-mode-and-standards-mode]: ./HTML/quirks-mode-and-standards-mode.md
 [creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
 [link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
