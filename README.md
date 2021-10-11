@@ -15,6 +15,7 @@
 -   [강한 결합 요소 (SCC, Strongly Connected Component)][scc]
 -   [위상 정렬 (Topology Sort)][topology-sort]
 -   [Union-Find][union-find]
+-   [수학 지식을 이용한 알고리즘들][math]
 
 <br>
 
@@ -110,6 +111,7 @@ https://ko.reactjs.org/
 [scc]: ./Algorithm/strongly-connected-component.md
 [topology-sort]: ./Algorithm/topology-sort.md
 [union-find]: ./Algorithm/union-find.md
+[math]: ./Algorithm/math.md
 [binary-tree]: ./Data-Structure/binary-tree.md
 [minimum-spanning-tree]: ./Data-Structure/minimum-spanning-tree.md
 [segment-tree]: ./Data-Structure/segment-tree.md
