@@ -1,5 +1,54 @@
 # Hook
 
+## useState
+
+```javascript
+const [state, setState] = useState(initialState);
+```
+
+상태 값과 그 값을 갱신하는 함수를 반환합니다.
+
+첫 렌더링을 하는 동안 반환된 상태 값(state)은 첫 번째 인자의 값(initialState)과 같습니다.
+
+setState 함수는 state를 갱신할 때 사용합니다. 새 상태 값을 받아 컴포넌트 리렌더링을 큐에 등록합니다.
+
+다음 렌더링 시에 useState를 통해 반환받은 첫 번째 값은 항상 최신 state가 됩니다.
+
+React는 setState 함수의 identity가 안정적이고 리렌더링 시에도 변경되지 않을 것을 보장합니다. 이것이 useEffect나 useCallback의 의존성 목록에 이 함수를 포함하지 않아도 되는 이유입니다.
+
+클래스 컴포넌트의 setState 메소드와는 다르게, useState는 갱신된 객체를 자동으로 합치지 않습니다. Function updater form을 객체 전개 연산자와 결합함으로써 이 동작을 복제할 수 있습니다.
+
+```javascript
+const [state, setState] = useState({});
+setState((prevState) => {
+    // Object.assign would also work
+    return { ...prevState, ...updatedValues };
+});
+```
+
+다른 방법으로는 useReducer가 있는데, 이는 여러 개의 하윗값을 포함한 state 객체를 관리하는 데에 더 적합합니다.
+
+### Lazy initial state
+
+initialState 인자는 초기 렌더링 시에 사용하는 state입니다. 이후 렌더링 시에는 이 값은 무시됩니다. 초기 state가 고비용 계산의 결과라면, 초기 렌더링 시에만 실행될 함수를 제공할 수 있습니다.
+
+```javascript
+const [state, setState] = useState(() => {
+    const initialState = someExpensiveComputation(props);
+    return initialState;
+});
+```
+
+### state 갱신 취소
+
+State Hook을 현재 state와 동일한 값으로 갱신하는 경우, React는 자식을 렌더링하거나 side effect를 수행하지 않습니다. (React는 Oject.is 비교 알고리즘을 사용합니다.)
+
+### Reference
+
+https://ko.reactjs.org/docs/hooks-reference.html#usestate
+
+<br>
+
 ## useMemo
 
 ```javascript
