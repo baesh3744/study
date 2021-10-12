@@ -62,6 +62,7 @@ https://www.gatsbyjs.com/
 ### React
 
 -   [Hook][hook]
+-   [재조정(Reconciliation)][reconciliation]
 
 #### Reference
 
@@ -123,6 +124,7 @@ https://ko.reactjs.org/
 [creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
 [link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
 [hook]: ./JavaScript-Library/React/hook.md
+[reconciliation]: ./JavaScript-Library/React/reconciliation.md
 [process-vs-thread]: ./OS/process-vs-thread.md
 [collections.counter]: ./Python/Class/collections.Counter.md
 [bisect]: ./Python/Module/bisect.md
