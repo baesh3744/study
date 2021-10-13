@@ -42,6 +42,12 @@
 
 <br>
 
+## JavaScript
+
+-   [이벤트 위임(event delegation)][event-delegation]
+
+<br>
+
 ## JavaScript Framework
 
 ### Gatsby
@@ -121,6 +127,7 @@ https://ko.reactjs.org/
 [doctype]: ./HTML/doctype.md
 [html-xml-xhtml]: ./HTML/html-xml-xhtml.md
 [quirks-mode-and-standards-mode]: ./HTML/quirks-mode-and-standards-mode.md
+[event-delegation]: ./JavaScript/event-delegation.md
 [creating-routes]: ./JavaScript-Framework/Gatsby/Routing/creating-routes.md
 [link-api]: ./JavaScript-Framework/Gatsby/Routing/Link-API.md
 [hook]: ./JavaScript-Library/React/hook.md
