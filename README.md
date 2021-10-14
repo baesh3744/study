@@ -36,6 +36,7 @@
 
 ## HTML
 
+-   [`data-*` 속성](HTML/data-attribute.md)
 -   [DOCTYPE](HTML/doctype.md)
 -   [HTML/XML/XHTML](HTML/html-xml-xhtml.md)
 -   [쿼크 모드(quirks mode)와 표준 모드(standards mode)](HTML/quirks-mode-and-standards-mode.md)
