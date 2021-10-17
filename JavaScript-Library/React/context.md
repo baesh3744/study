@@ -145,6 +145,259 @@ function Page(props) {
 
 <br>
 
+## API
+
+### React.createContext
+
+```javascript
+const MyContext = React.createContext(defaultValue);
+```
+
+Context 객체를 만듭니다. Centext 객체를 구독하고 있는 컴포넌트를 렌더링할 때 React는 트리 상위에서 가장 가까이 있는 짝이 맞는 `Provider`로부터 현재값을 읽습니다.
+
+`defaultValue` 매개변수는 트리 안에서 적절한 Provider를 찾지 못했을 때만 쓰이는 값입니다. 이 기본값은 컴포넌트를 독립적으로 테스트할 때 유용한 값입니다. Provider를 통해 `undefined`를 값으로 보낸다고 해도 구독 컴포넌트들이 `defaultValue`를 읽지 않습니다.
+
+### Context.Provider
+
+```javascript
+<MyContext.Provider value={/* 어떤 값 */}>
+```
+
+Context 객체에 포함된 React 컴포넌트인 Provider는 context를 구독하는 컴포넌트들에게 context의 변화를 알리는 역할을 합니다.
+
+Provider 컴포넌트는 `value` prop을 받아서 이 값을 하위 컴포넌트에게 전달합니다. 값을 전달받을 수 있는 컴포넌트의 수에 제한은 없습니다. Provider 하위에 또 다른 Provider를 배치하는 것도 가능하며, 이 경우 하위 Provider의 값이 우선시됩니다.
+
+Provider 하위에서 context를 구독하는 모든 컴포넌트는 Provider의 `value` prop가 바뀔 때마다 다시 렌더링됩니다. Provider로부터 하위 consumer (`.contextType`과 `useContext`를 포함한) 로의 전파는 `shouldComponentUpdate` 메소드가 적용되지 않으므로, 상위 컴포넌트가 업데이트를 건너 뛰더라도 consumer가 업데이트됩니다.
+
+context 값이 바뀌었는지 여부는 `Object.is`와 동일한 알고리즘을 사용해 이전 값과 새로운 값을 비교해 측정됩니다.
+
+### Class.contextType
+
+```javascript
+class MyClass extends React.Component {
+    render() {
+        let value = this.context;
+        /* context 값을 이용한 렌더링 */
+    }
+}
+MyClass.contextType = MyContext;
+```
+
+`React.createContext()`로 생성한 context 객체를 원하는 클래스의 `contextType` 프로퍼티로 지정할 수 있습니다. 이 프로퍼티를 활용해 클래스 안에서 `this.context`를 이용해 해당 context의 가장 가까운 Provider를 찾아 그 값을 읽을 수 있게됩니다. 이 값은 render를 포함한 모든 컴포넌트 생명주기 메소드에서 사용할 수 있습니다.
+
+"Public class fields syntax"를 사용하고 있다면 static 클래스 프로퍼티로 `contextType`을 지정할 수 있습니다.
+
+```javascript
+class MyClass extends React.Component {
+    static contextType = MyContext;
+    render() {
+        let value = this.context;
+        /* context 값을 이용한 렌더링 */
+    }
+}
+```
+
+### Context.Consumer
+
+```javascript
+<MyContext.Consumer>
+    {value => /* context 값을 이용한 렌더링 */}
+</MyContext.Consumer>
+```
+
+Context 변화를 구독하는 React 컴포넌트입니다. 이 컴포넌트를 사용하면 함수 컴포넌트안에서 context를 구독할 수 있습니다.
+
+Context.Consumer의 자식은 함수여야합니다. 이 함수는 context의 현재값을 받고 React 노드를 반환합니다. 이 함수가 받는 `value` 매개변수 값은 해당 context의 Provider 중 상위 트리에서 가장 가까운 Provider의 `value` prop과 동일합니다. 상위에 Provider가 없다면 `value` 매개변수 값은 `createContext()`에 보냈던 `defaultValue`와 동일할 것입니다.
+
+### Context.displayName
+
+Context 객체는 `displayName` 문자열 속성을 사용해 context를 어떻게 보여줄지 결정합니다.
+
+예를 들어, 아래 컴포넌트는 개발자 도구에 MyDisplayName으로 표시됩니다.
+
+```javascript
+const MyContext = React.createContext(defaultValue);
+MyContext.displayName = "MyDisplayName";
+
+<MyContext.Provider>  // "MyDisplayName.Provider" in DevTools
+<MyContext.Consumer>  // "MyDisplayName.Consumer" in DevTools
+```
+
+<br>
+
+## 예시
+
+### 하위 컴포넌트에서 context 업데이트하기
+
+컴포넌트 트리 하위 컴포넌트에서 context를 업데이트해야 할 때가 종종 있습니다. 그럴 때는 context를 통해 메소드를 보내면 됩니다.
+
+#### theme-context.js
+
+```javascript
+export const ThemeContext = React.createContext({
+    theme: themes.dark,
+    toggleTheme: () => {},
+});
+```
+
+#### theme-toggler-button.js
+
+```javascript
+import { ThemeContext } from "./theme-context";
+
+function ThemeTogglerButton() {
+    return (
+        <ThemeContext.Consumer>
+            {({theme, toggleTheme}) => (
+                <button
+                    onClick={toggleTheme}
+                    style={{backgroundColor: theme.background}}>
+                    Toggle Theme
+                </button>
+            )}
+        </ThemeContext.Consumer>>
+    )
+}
+
+export default ThemeTogglerButton;
+```
+
+#### app.js
+
+```javascript
+import { ThemeContext, themes } from "./theme-context";
+import ThemeTogglerButton from "./theme-toggler-button";
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.toggleTheme = () => {
+            this.setState((state) => ({
+                theme: state.theme === themes.dark ? themes.light : themes.dark,
+            }));
+        };
+
+        this.state = {
+            theme: themes.light,
+            toggleTheme: this.toggleTheme,
+        };
+    }
+
+    render() {
+        return (
+            <ThemeContext.Provider value={this.state}>
+                <Content />
+            </ThemeContext.Provider>
+        );
+    }
+}
+
+function Content() {
+    return (
+        <div>
+            <ThemeTogglerButton />
+        </div>
+    );
+}
+
+ReactDOM.render(<App />, document.root);
+```
+
+### 여러 context 구독하기
+
+```javascript
+// 기본값이 light인 ThemeContext
+const ThemeContext = React.createContext("light");
+
+// 로그인한 유저 정보를 담는 UserContext
+const UserContext = React.createContext({
+    name: "Guest",
+});
+
+class App extends React.Component {
+    render() {
+        const {signedInUser, theme} = this.props;
+
+        // Context 초기값을 제공하는 App 컴포넌트
+        return (
+            <ThemeContext.Provider value={theme}>
+                <UserContext.Provider value={signedInUser}>
+                    <Layout />
+                </UserContext.Provider>
+            </ThemeContext.Provider>>
+        )
+    }
+}
+
+function Layout() {
+    return (
+        <div>
+            <Sidebar />
+            <Content />
+        </div>
+    )
+}
+
+// 여러 context의 값을 받는 컴포넌트
+function Content() {
+    return (
+        <ThemeContext.Consumer>
+            {theme => (
+                <UserContext.Consumer>
+                    {user => (
+                        <ProfilePage user={user} theme={theme} />
+                    )}
+                </UserContext.Consumer>
+            )}
+        </ThemeContext.Consumer>
+    )
+}
+```
+
+각 context마다 Consumer를 개벽 노드로 만들게 설계되어있는데, 이것은 context 변화로 인해 다시 렌더링하는 과정을 빠르게 유지하기 위함입니다.
+
+<br>
+
+## 주의사항
+
+다시 렌더링할지 여부를 정할 떄 reference를 확인하기 때문에, Provider의 부모가 렌더링 될 때마다 불필요하게 하위 컴포넌트가 다시 렌더링 되는 문제가 생길 수도 있습니다. 예를 들어 아래 코드는 `value`가 바뀔 때마다 매번 새로운 객체가 생성되므로 Provider가 렌더링 될 때마다 하위에서 구독하고 있는 컴포넌트 모두가 다시 렌더링 될 것입니다.
+
+```javascript
+class App extends React.Component {
+    render() {
+        return (
+            <MyContext.Provider value={{ something: "something" }}>
+                <Toolbar />
+            </MyContext.Provider>
+        );
+    }
+}
+```
+
+이를 피하기 위해서는 `value` 값을 부모의 state로 끌어 올려야 합니다.
+
+```javascript
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: { something: "something" },
+        };
+    }
+
+    render() {
+        return (
+            <MyContext.Provider value={this.state.value}>
+                <Toolbar />
+            </MyContext.Provider>
+        );
+    }
+}
+```
+
+<br>
+
 ## Reference
 
 https://ko.reactjs.org/docs/context.html
