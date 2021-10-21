@@ -109,7 +109,7 @@ https://ko.reactjs.org/
 ## Web
 
 -   [검색 엔진 최적화 (SEO, Search Engine Optimization)](Web/seo.md)
--   [CSR vs. SSR](Web/csr-vs-ssr.md)
+-   [CSR / SSR / PSSR](Web/csr-ssr-pssr.md)
 -   [HTTP와 HTTPS](Web/http-and-https.md)
 -   [HTTP Method](Web/http-method.md)
 -   [RESTful API](Web/restful-api.md)

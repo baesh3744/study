@@ -1,4 +1,4 @@
-# CSR vs. SSR
+# CSR / SSR / PSSR
 
 ## CSR (Client Side Rendering)
 
@@ -48,6 +48,33 @@ CSR로 구성할 경우 S3같은 단순 스토리지에 올리고 전면에 Clou
 
 <br>
 
+## PSSR (Progressive Server Side Rendering)
+
+PSSR은 서버에서 중요한 컨텐츠를 먼저 렌더링하여 클라이언트에게 전송하고 중요하지 않은 컨텐츠는 이후 렌더링 되는대로 전송합니다. 브라우저는 중요한 컨텐츠를 먼저 보여주고 중요하지 않은 컨텐츠는 이후 차례대로 보여줍니다.
+
+### PSSR의 동작
+
+1. 클라이언트가 서버에게 HTML을 요청합니다.
+2. 서버는 먼저 중요한 컨텐츠를 렌더링하여 클라이언트에게 전송합니다.
+3. 클라이언트는 중요한 컨텐츠를 받아서 화면에 보여줍니다.
+4. 서버는 중요한 컨텐츠를 렌더링한 후, 중요하지 않은 컨텐츠를 렌더링하고 클라이언트에게 전송합니다.
+5. 클라이언트는 중요하지 않은 컨텐츠를 받아서 화면에 보여줍니다.
+6. 페이지가 모두 로드되면, DOM 요소에 이벤트 핸들러 등을 설정합니다.
+
+### PSSR의 장점
+
+-   서버에서 중요한 컨텐츠가 렌더링 되는 즉시 중요하지 않은 컨텐츠가 렌더링 될 때까지 기다리지 않고 클라이언트에게 전송합니다.
+-   컨텐츠가 JavaScript bundle load에 제약을 받지 않습니다.
+-   CSR과 SSR에 비해 빠릅니다.
+
+### PSSR의 단점
+
+-   이벤트 리스너는 화면이 모두 렌더링 된 후에 동작합니다. 화면이 빨리 보여도, 중요하지 않은 컨텐츠까지 렌더링 되어야 이벤트가 가능합니다.
+-   Progressive rendering을 위한 framework가 없고 웹 애플리케이션과 그 한계에 제약을 받습니다.
+
+<br>
+
 ## Reference
 
 https://tech.weperson.com/wedev/frontend/csr-ssr-spa-mpa-pwa/#csr-client-side-rendering-vs-ssr-server-side-rendering
+https://medium.com/the-thinkmill/progressive-rendering-the-key-to-faster-web-ebfbbece41a4
