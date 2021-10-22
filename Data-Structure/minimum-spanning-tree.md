@@ -150,26 +150,26 @@ from collections import defaultdict
 from heapq import *
 
 
-edges: list[tuple[str, str, int]]  # 간선 리스트, (정점A, 정점B, 가중치)
+edges: list[tuple[str, str, int]]  # 간선 리스트, (가중치, 정점U, 정점V)
 
 
 def prim(start_node: str) -> list[tuple[str, str, int]]:
     mst: list[tuple[str, str, int]] = list()
 
     adjacent_edges = defaultdict(list)
-    for node_u, node_v, weight in adjacent_edges:
-        adjacent_edges[node_u].append((node_u, node_v, weight))
-        adjacent_edges[node_v].append((node_v, node_u, weight))
+    for weight, node_u, node_v in adjacent_edges:
+        adjacent_edges[node_u].append((weight, node_u, node_v))
+        adjacent_edges[node_v].append((weight, node_v, node_u))
 
     connected_nodes = set(start_node)
     candidate_edge_list = adjacent_edges[start_node]
     heapify(candidate_edge_list)
 
     while candidate_edge_list:
-        node_u, node_v, weight = heappop(candidate_edge_list)
+    weight, node_u, node_v = heappop(candidate_edge_list)
         if node_v not in connected_nodes:
             connected_nodes.add(node_v)
-            mst.append((node_u, node_v, weight))
+            mst.append((weight, node_u, node_v))
             for edge in adjacent_edges[node_v]:
                 if edge[1] not in connected_nodes:
                     heappush(candidate_edge_list, edge)
