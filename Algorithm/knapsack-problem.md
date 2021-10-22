@@ -101,4 +101,5 @@ def knapsack(capacity: int, n: int, weights: list[int], values: list[int]) -> in
 ## Reference
 
 https://comdoc.tistory.com/entry/35-%EB%B0%B0%EB%82%AD%EB%AC%B8%EC%A0%9CKnapsack-problem-%ED%8C%8C%EC%9D%B4%EC%8D%AC
+
 https://dojinkimm.github.io/algorithm/2019/10/19/dp-2.html

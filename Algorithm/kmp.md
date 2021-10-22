@@ -77,6 +77,7 @@ def kmp(text: str, pattern: str) -> list[int]:
 ## Reference
 
 https://bowbowbow.tistory.com/6
+
 https://girawhale.tistory.com/44
 
 <style>

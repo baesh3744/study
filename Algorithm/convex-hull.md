@@ -73,4 +73,5 @@ def monotone_chain(dot_list: list[Point]) -> tuple[list[Point], list[Point]]:
 ## Reference
 
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=kks227&logNo=220857597424
+
 https://atez.kagamine.me/43

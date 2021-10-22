@@ -75,5 +75,7 @@ def topology_sort() -> bool:
 ## Reference
 
 https://m.blog.naver.com/ndb796/221236874984
+
 https://gmlwjd9405.github.io/2018/08/27/algorithm-topological-sort.html
+
 https://freedeveloper.tistory.com/390

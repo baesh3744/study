@@ -27,3 +27,9 @@ const Page = () => (
     </div>
 );
 ```
+
+<br>
+
+## Reference
+
+https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/

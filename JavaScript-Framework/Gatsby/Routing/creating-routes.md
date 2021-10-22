@@ -28,3 +28,9 @@ Gatsby는 `src/pages` 디렉토리에 존재하는 `.js` 파일의 이름으로 
 ## 3. `gatsby-node.js`
 
 (나중에)
+
+<br>
+
+## Reference
+
+https://www.gatsbyjs.com/docs/reference/routing/creating-routes/

@@ -77,4 +77,5 @@ PSSR은 서버에서 중요한 컨텐츠를 먼저 렌더링하여 클라이언�
 ## Reference
 
 https://tech.weperson.com/wedev/frontend/csr-ssr-spa-mpa-pwa/#csr-client-side-rendering-vs-ssr-server-side-rendering
+
 https://medium.com/the-thinkmill/progressive-rendering-the-key-to-faster-web-ebfbbece41a4

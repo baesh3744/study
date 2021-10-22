@@ -61,4 +61,5 @@ def get_diameter_of_tree() -> int:
 ## Reference
 
 https://www.acmicpc.net/problem/1967
+
 https://velog.io/@coding_egg/%EB%B0%B1%EC%A4%80-1991%EB%B2%88-%ED%8A%B8%EB%A6%AC%EC%9D%98-%EC%A7%80%EB%A6%84-python-%ED%8C%8C%EC%9D%B4%EC%8D%AC

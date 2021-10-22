@@ -66,11 +66,6 @@
     -   [Creating routes](JavaScript-Framework/Gatsby/Routing/creating-routes.md)
     -   [`<Link>`](JavaScript-Framework/Gatsby/Routing/Link-API.md)
 
-#### Reference
-
-https://edu.goorm.io/learn/lecture/25881/%EB%88%84%EA%B5%AC%EB%82%98-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8B%A4-react-%EA%B8%B0%EB%B0%98-gatsby%EB%A1%9C-%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0
-https://www.gatsbyjs.com/
-
 <br>
 
 ## JavaScript Library
@@ -80,10 +75,6 @@ https://www.gatsbyjs.com/
 -   [Context](JavaScript-Library/React/context.md)
 -   [Hook](JavaScript-Library/React/hook.md)
 -   [재조정(Reconciliation)](JavaScript-Library/React/reconciliation.md)
-
-#### Reference
-
-https://ko.reactjs.org/
 
 <br>
 
