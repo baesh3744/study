@@ -22,6 +22,7 @@
 ## CSS
 
 -   [position](CSS/position.md)
+-   [반응형 디자인(Responsive Design) vs. 적응형 디자인(Adaptive Design)](CSS/responsive-design-and-adaptive-design.md)
 
 <br>
 
