@@ -80,6 +80,7 @@
 -   [Hook](JavaScript-Library/React/hook.md)
 -   [Portal](JavaScript-Library/React/portal.md)
 -   [재조정(Reconciliation)](JavaScript-Library/React/reconciliation.md)
+-   [Strict mode](JavaScript-Library/React/strict-mode.md)
 
 <br>
 
