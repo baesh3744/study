@@ -32,6 +32,7 @@
 -   [최소 스패닝 트리 (MST, Minimum Spanning Tree)](Data-Structure/minimum-spanning-tree.md)
 -   [세그먼트 트리 (Segment Tree)](Data-Structure/segment-tree.md)
     -   [느리게 갱신되는 세그먼트 트리](Data-Structure/segment-tree-and-lazy-propagation.md)
+    -   [머지 소트 트리(Merge Sort Tree)](Data-Structure/merge-sort-tree.md)
 -   [트라이 (Trie)](Data-Structure/trie.md)
 
 <br>
