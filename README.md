@@ -62,6 +62,7 @@
 -   [IIFE(Immediately Invoked Function Expression)](JavaScript/iife.md)
 -   [상속과 프로토타입 체인](JavaScript/inheritance-and-prototype-chain.md)
 -   [null / undefined / undeclared](JavaScript/null-undefined-undeclared.md)
+-   [객체의 분류](JavaScript/classification-of-objects.md)
 -   [this](JavaScript/this.md)
 
 <br>
