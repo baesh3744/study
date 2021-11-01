@@ -14,6 +14,7 @@
 -   [가장 긴 증가하는 부분수열(LIS, Longest Increasing Subsequence)](Algorithm/longest-increasing-subsequence.md)
 -   [최소 공통 조상(LCA, Lowest Common Ancestor)](Algorithm/lowest-common-ancestor.md)
 -   [최대 유량(Maximum Flow)](Algorithm/maximum-flow.md)
+-   [SPFA(Shortest Path Faster Algorithm)](Algorithm/spfa.md)
 -   [강한 결합 요소(SCC, Strongly Connected Component)](Algorithm/strongly-connected-component.md)
 -   [위상 정렬(Topology Sort)](Algorithm/topology-sort.md)
 -   [Union-Find](Algorithm/union-find.md)
