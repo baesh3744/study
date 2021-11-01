@@ -1,4 +1,4 @@
-# 검색 엔진 최적화 (SEO, Search Engine Optimization)
+# 검색 엔진 최적화(SEO, Search Engine Optimization)
 
 ## 검색 엔진 최적화란
 

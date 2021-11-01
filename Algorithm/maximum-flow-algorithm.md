@@ -1,4 +1,4 @@
-# 최대 유량(Maximum Flow)
+# 최대 유량 알고리즘(Maximum Flow Algorithm)
 
 ## 최대 유량 알고리즘
 

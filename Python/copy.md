@@ -1,4 +1,4 @@
-# 얕은 복사 (Shallow Copy) vs 깊은 복사 (Deep Copy)
+# 얕은 복사(Shallow Copy) vs. 깊은 복사(Deep Copy)
 
 ## Mutable vs Immutable
 
