@@ -73,7 +73,7 @@
 
 ## HTML
 
--   [쿼크 모드(quirks mode)와 표준 모드(standards mode)](HTML/quirks-mode-and-standards-mode.md)
+-   [쿼크 모드(Quirks Mode)와 표준 모드(Standards Mode)](HTML/quirks-mode-and-standards-mode.md)
 -   [`data-*` 속성](HTML/data-attribute.md)
 -   [DOCTYPE](HTML/doctype.md)
 -   [HTML/XML/XHTML](HTML/html-xml-xhtml.md)
@@ -82,13 +82,16 @@
 
 ## JavaScript
 
+### [Interview Questions](JavaScript/interview-questions.md)
+
 -   [객체의 분류](JavaScript/classification-of-objects.md)
 -   [상속과 프로토타입 체인](JavaScript/inheritance-and-prototype-chain.md)
--   [이벤트 버블링(event bubbling)과 이벤트 캡처링(event capturing)](JavaScript/event-bubbling-and-capturing.md)
--   [이벤트 위임(event delegation)](JavaScript/event-delegation.md)
--   [익명 함수(anonymous function)](JavaScript/anonymous-function.md)
+-   [이벤트 버블링(Event Bubbling)과 이벤트 캡처링(Event Capturing)](JavaScript/event-bubbling-and-capturing.md)
+-   [이벤트 위임(Event Delegation)](JavaScript/event-delegation.md)
+-   [익명 함수(Anonymous Function)](JavaScript/anonymous-function.md)
 -   [클로저(Closure)](JavaScript/closure.md)
 -   [IIFE(Immediately Invoked Function Expression)](JavaScript/iife.md)
+-   [new 연산자와 생성자 함수](JavaScript/new-operator-and-constructor-function.md)
 -   [null / undefined / undeclared](JavaScript/null-undefined-undeclared.md)
 -   [this](JavaScript/this.md)
 
@@ -99,7 +102,7 @@
 ### Gatsby
 
 -   Routing
-    -   [Creating routes](JavaScript-Framework/Gatsby/Routing/creating-routes.md)
+    -   [Creating Routes](JavaScript-Framework/Gatsby/Routing/creating-routes.md)
     -   [`<Link>`](JavaScript-Framework/Gatsby/Routing/Link-API.md)
 
 <br>
@@ -114,7 +117,7 @@
 -   [Portal](JavaScript-Library/React/portal.md)
 -   [Ref와 DOM](JavaScript-Library/React/ref-and-dom.md)
 -   [Ref 전달하기](JavaScript-Library/React/forwarding-refs.md)
--   [Strict mode](JavaScript-Library/React/strict-mode.md)
+-   [Strict Mode](JavaScript-Library/React/strict-mode.md)
 
 <br>
 
