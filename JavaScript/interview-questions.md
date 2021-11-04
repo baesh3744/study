@@ -16,6 +16,18 @@ var person = new Person();
 -   `function Person() {}`은 함수 선언문입니다. 따라서 런타임 이전에 선언되며, 호이스팅이 됩니다. 이때, 호출이 되지 않는다면 실행이 되지 않습니다.
 -   `var person = Person();`은 함수를 호출하고, 반환값을 변수에 저장하는 명령문입니다.
 -   `var person = new Person();`에서 `Person()` 함수는 생성자 함수로써 동작합니다. 따라서 `Person()` 함수가 반환하는 값에 따라 변수 `person`에 저장되는 값이 달라지는데, 반환하는 값이 객체라면 반환한 객체가, 객체 이외의 값이라면 `Person()` 함수의 `this`가 저장됩니다.
+
+</details>
+
+### `Function.prototype.call()`과 `Function.prototype.apply()`의 차이점은 무엇인가요?
+
+<details>
+    <summary>Click!</summary>
+
+<br>
+
+두 메소드 모두 함수 내 `this`를 명시적으로 고정해주기 위해 사용하지만, 복수 인자를 받을 때 `call()` 메소드는 인자를 따로따로 받고 `apply()` 메소드는 유사 배열 객체로 받습니다.
+
 </details>
 
 <br>
