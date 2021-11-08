@@ -90,6 +90,7 @@
 -   [이벤트 위임(Event Delegation)](JavaScript/event-delegation.md)
 -   [익명 함수(Anonymous Function)](JavaScript/anonymous-function.md)
 -   [클로저(Closure)](JavaScript/closure.md)
+-   [함수 바인딩](JavaScript/bind.md)
 -   [`call()`/`apply()`와 데코레이터, 포워딩](JavaScript/call-apply-and-decorator-forwarding.md)
 -   [IIFE(Immediately Invoked Function Expression)](JavaScript/iife.md)
 -   [new 연산자와 생성자 함수](JavaScript/new-operator-and-constructor-function.md)

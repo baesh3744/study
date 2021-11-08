@@ -30,6 +30,38 @@ var person = new Person();
 
 </details>
 
+### `Function.prototype.bind()`을 설명하세요.
+
+<details>
+    <summary>Click!</summary>
+
+<br>
+
+```javascript
+const user = {
+    firstName: "Foo",
+    sayHello() {
+        console.log(`Hello, ${this.firstName}!`);
+    },
+};
+
+const hello = user.sayHello;
+hello(); // Hello, undefined!
+```
+
+위 코드와 같이 객체 메소드는 개체 내부가 아닌 다른 곳에 전달되어 호출되면 `this`가 사라집니다.
+
+`hello`에 `user.sayHello`를 전달할 때, `bind()`를 사용하면 `this`를 `user`로 고정할 수 있습니다.
+
+```javascript
+const hello = user.sayHello.bind(user);
+hello(); // Hello, Foo!
+```
+
+이처럼 `bind()`는 함수에 전달되는 `this`를 고정시켜줍니다. 또한 `bind()`의 두 번쨰 인자부터는 원본 함수의 인자로 전달되어 고정시켜줍니다.
+
+</details>
+
 <br>
 
 ## Reference
