@@ -25,6 +25,7 @@
 ### 문자열
 
 -   [KMP(Knuth, Morris, Pratt)](Algorithm/kmp.md)
+-   [접미사 배열(Suffix Array)과 LCP 배열](Algorithm/suffix-array-and-lcp-array.md)
 
 ### 좌표 평면
 
