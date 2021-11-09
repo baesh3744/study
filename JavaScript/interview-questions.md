@@ -62,6 +62,41 @@ hello(); // Hello, Foo!
 
 </details>
 
+### "호이스팅(Hoisting)"에 대해서 설명하세요.
+
+<details>
+    <summary>Click!</summary>
+
+<br>
+
+호이스팅이란 JavaScript 인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 말합니다. 따라서 변수를 선언하는 코드보다 변수를 사용하는 코드가 먼저 등장할 수 있습니다. 호이스팅 시 `var`로 선언한 변수는 `undefined`로 초기화되지만, `let`이나 `const`로 선언한 변수는 초기화되지 않습니다.
+
+```javascript
+console.log(varNum); // undefined
+var varNum;
+
+console.log(constNum); // 2
+const constNum = 2;
+```
+
+아래와 같은 경우에는 `ReferenceError`가 발생하므로 주의해야 합니다.
+
+-   선언 없이 초기화하는 코드만 존재하는 경우
+
+```javascript
+console.log(num); // ReferenceError. 선언하는 코드가 존재하지 않으므로 호이스팅이 발생하지 않습니다.
+num = 2;
+```
+
+-   `let`이나 `const`로 선언한 변수를 초기화 전에 사용하는 경우
+
+```javascript
+console.log(num); // ReferenceError. const로 선언한 변수이므로 초기화된 값이 존재하지 않습니다.
+const num;
+```
+
+</details>
+
 <br>
 
 ## Reference
