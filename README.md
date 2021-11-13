@@ -100,6 +100,7 @@
 -   [IIFE(Immediately Invoked Function Expression)](JavaScript/iife.md)
 -   [new 연산자와 생성자 함수](JavaScript/new-operator-and-constructor-function.md)
 -   [null / undefined / undeclared](JavaScript/null-undefined-undeclared.md)
+-   [Promise](JavaScript/promise.md)
 -   [this](JavaScript/this.md)
 
 <br>
