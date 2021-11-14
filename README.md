@@ -101,6 +101,7 @@
 -   [new 연산자와 생성자 함수](JavaScript/new-operator-and-constructor-function.md)
 -   [null / undefined / undeclared](JavaScript/null-undefined-undeclared.md)
 -   [Promise](JavaScript/promise.md)
+-   [Promise Chaining](JavaScript/promise-chaining.md)
 -   [this](JavaScript/this.md)
 
 <br>
