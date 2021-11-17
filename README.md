@@ -103,6 +103,7 @@
 -   [Promise](JavaScript/promise.md)
 -   [Promise Chaining](JavaScript/promise-chaining.md)
 -   [Promise와 에러 핸들링](JavaScript/promise-and-error-handling.md)
+-   [Promise API](JavaScript/promise-api.md)
 -   [this](JavaScript/this.md)
 
 <br>
