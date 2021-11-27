@@ -53,6 +53,7 @@
 -   [세그먼트 트리(Segment Tree)](Data-Structure/segment-tree.md)
     -   [느리게 갱신되는 세그먼트 트리](Data-Structure/segment-tree-and-lazy-propagation.md)
     -   [머지 소트 트리(Merge Sort Tree)](Data-Structure/merge-sort-tree.md)
+    -   [펜윅 트리(Fenwick Tree)](Data-Structure/fenwick-tree.md)
 -   [이진 트리(Binary Tree)](Data-Structure/binary-tree.md)
 -   [최소 스패닝 트리(MST, Minimum Spanning Tree)](Data-Structure/minimum-spanning-tree.md)
 -   [트라이(Trie)](Data-Structure/trie.md)
