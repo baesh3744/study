@@ -166,3 +166,4 @@
 -   [SPA / MPA / PWA](Web/spa-mpa-pwa.md)
 -   [TCP vs. UDP](Web/tcp-vs-udp.md)
 -   [쿠키와 document.cookie](Web/cookie.md)
+-   [localStorage와 sessionStorage](Web/localStorage-sessionStorage.md)
