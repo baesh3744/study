@@ -116,6 +116,23 @@ var도 let과 마찬가지로 변수를 선언할 때 사용합니다. 일반적
 
 </details>
 
+### "속성(attribute)"와 "요소(property)"의 차이는 무엇인가요?
+
+<details>
+    <summary>Click!</summary>
+
+<br>
+
+| Attribute                 | Property              |
+| ------------------------- | --------------------- |
+| HTML 태그 안에서 사용     | DOM 객체 안에서 사용  |
+| 대·소문자를 구분하지 않음 | 대·소문자를 구분함    |
+| 문자열 값만 가능          | 모든 타입의 값이 가능 |
+
+(자세히) [속성(Attribute)와 프로퍼티(Property)](JavaScript/attribute-property.md)
+
+</details>
+
 <br>
 
 ## Reference
