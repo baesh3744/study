@@ -112,6 +112,7 @@
 -   [async 이터레이터와 제너레이터](JavaScript/async-iterator-generator.md)
 -   [this](JavaScript/this.md)
 -   [속성(Attribute)와 프로퍼티(Property)](JavaScript/attribute-property.md)
+-   [AJAX](JavaScript/ajax.md)
 
 <br>
 
