@@ -11,6 +11,37 @@ AJAX의 주요 두 가지 특징은 아래의 작업을 할 수 있게 해줍니
 
 <br>
 
+## AJAX의 장점
+
+-   웹 페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 일부분만을 갱신할 수 있습니다.
+-   웹 페이지가 로드된 후에 서버로 데이터 요청을 보낼 수 있습니다.
+-   웹 페이지가 로드된 후에 서버로부터 데이터를 받을 수 있습니다.
+-   백그라운드 영역에서 서버로 데이터를 보낼 수 있습니다.
+
+<br>
+
+## AJAX의 한계
+
+-   AJAX는 클라이언트가 서버에 데이터를 요청하는 클라이언트 풀링 방식을 사용하므로, 서버 푸시 방식의 실시간 서비스는 만들 수 없습니다.
+-   AJAX로는 바이너리 데이터를 보내거나 받을 수 없습니다.
+-   AJAX 스크립트가 포함된 서버가 아닌 다른 서버로 AJAX 요청을 보낼 수는 없습니다.
+-   클라이언트의 PC로 AJAX 요청을 보낼 수는 없습니다.
+
+### 클라이언트 풀링과 서버 푸시
+
+클라이언트 풀링(client pooling) 방식이란 사용자가 직접 원하는 정보를 서버에게 요청하여 얻는 방식을 의미합니다. 이에 반해 서버 푸시(server push) 방식이란 사용자가 요청하지 않아도 서버가 알아서 자동으로 특정 정보를 제공하는 것을 의미합니다. 스마트 폰에서 각종 앱이 보내는 푸시 알림이 서버 푸시 방식의 대표적인 예입니다.
+
+<br>
+
+## AJAX 동작 원리
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/22341362/144363650-c1829007-a24b-49d0-bdb0-16362416546d.png" alt="AJAX를 이용한 웹 응용 프로그램의 동작 원리" width="370" />
+    <img src="https://user-images.githubusercontent.com/22341362/144363653-c0dcf329-9041-4285-a8c6-1b255fa3abe1.png" alt="기존 웹 응용 프로그램의 동작 원리" width=370 />
+</p>
+
+<br>
+
 ## HTTP request 만드는 방법
 
 JavaScript를 이용하여 서버로 보내는 HTTP request를 만들기 위해서는 그에 맞는 기능을 제공하는 Object의 인스턴스가 필요합니다. `XMLHttpRequest`가 그러한 Object의 한 예입니다.
@@ -189,3 +220,7 @@ function alertContents() {
 ## Reference
 
 https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started
+
+http://tcpschool.com/ajax/ajax_intro_basic
+
+http://tcpschool.com/ajax/ajax_intro_works
