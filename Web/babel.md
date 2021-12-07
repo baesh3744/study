@@ -20,3 +20,9 @@
 -   Polyfill (기본적으로 구브라우저에서 지원하지 않는 최신 기능을 지원하는 데 필요한 코드)
 -   소스 코드 변환 (codemods)
 -   기타..
+
+<br>
+
+## Reference
+
+https://babeljs.io/docs/en/
