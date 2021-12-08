@@ -173,3 +173,4 @@
 -   [localStorage와 sessionStorage](Web/localStorage-sessionStorage.md)
 -   [웹팩(webpack)](Web/webpack.md)
 -   [바벨(Babel)](Web/babel.md)
+-   [TypeScript](Web/typescript.md)
