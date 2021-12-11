@@ -70,6 +70,7 @@
 ## Development Common Sense
 
 -   [객체 지향 프로그래밍](Development-Common-Sense/oop.md)
+-   [컴파일러(Compiler)와 인터프리터(Interpreter)](Development-Common-Sense/compiler-interpreter.md)
 
 <br>
 
