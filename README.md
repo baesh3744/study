@@ -71,6 +71,7 @@
 
 -   [객체 지향 프로그래밍](Development-Common-Sense/oop.md)
 -   [컴파일러(Compiler)와 인터프리터(Interpreter)](Development-Common-Sense/compiler-interpreter.md)
+-   [정적 타이핑(Static Typing)과 동적 타이핑(Dynamic Typing)](Development-Common-Sense/static-dynamic-typing.md)
 
 <br>
 
@@ -115,6 +116,8 @@
 -   [속성(Attribute)와 프로퍼티(Property)](JavaScript/attribute-property.md)
 -   [AJAX](JavaScript/ajax.md)
 -   [모듈(Module)](JavaScript/module.md)
+-   [데이터 타입](JavaScript/data-type.md)
+-   [Symbol](JavaScript/symbol.md)
 
 <br>
 
