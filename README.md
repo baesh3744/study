@@ -120,6 +120,9 @@
 -   [Symbol](JavaScript/symbol.md)
 -   [타입 변환](JavaScript/type-conversion.md)
 -   [Truthy/Falsy](JavaScript/truthy-falsy.md)
+-   [배열(Array)](JavaScript/array.md)
+-   [밀집 배열(Dense Array)와 희소 배열(Sparse Array)](JavaScript/dense-sparse-array.md)
+-   [고차 함수(HOF, Higher-Order Function)](JavaScript/hof.md)
 
 <br>
 
