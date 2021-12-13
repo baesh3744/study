@@ -118,6 +118,8 @@
 -   [모듈(Module)](JavaScript/module.md)
 -   [데이터 타입](JavaScript/data-type.md)
 -   [Symbol](JavaScript/symbol.md)
+-   [타입 변환](JavaScript/type-conversion.md)
+-   [Truthy/Falsy](JavaScript/truthy-falsy.md)
 
 <br>
 
