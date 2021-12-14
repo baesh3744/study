@@ -124,6 +124,7 @@
 -   [배열(Array)](JavaScript/array.md)
 -   [밀집 배열(Dense Array)와 희소 배열(Sparse Array)](JavaScript/dense-sparse-array.md)
 -   [고차 함수(HOF, Higher-Order Function)](JavaScript/hof.md)
+-   [객체(Object)](JavaScript/object.md)
 
 <br>
 
