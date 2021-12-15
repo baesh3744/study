@@ -126,6 +126,7 @@
 -   [고차 함수(HOF, Higher-Order Function)](JavaScript/hof.md)
 -   [객체(Object)](JavaScript/object.md)
 -   [함수(Function)](JavaScript/function.md)
+-   [스코프(Scope)](JavaScript/scope.md)
 
 <br>
 
