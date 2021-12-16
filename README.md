@@ -127,6 +127,7 @@
 -   [객체(Object)](JavaScript/object.md)
 -   [함수(Function)](JavaScript/function.md)
 -   [스코프(Scope)](JavaScript/scope.md)
+-   [1급 객체(First-Class Object)](JavaScript/first-class-object.md)
 
 <br>
 
