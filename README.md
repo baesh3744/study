@@ -71,6 +71,7 @@
 ## Development Common Sense
 
 -   [객체 지향 프로그래밍](Development-Common-Sense/oop.md)
+-   [함수형 프로그래밍(Functional Programming)](Development-Common-Sense/functional-programming.md)
 -   [컴파일러(Compiler)와 인터프리터(Interpreter)](Development-Common-Sense/compiler-interpreter.md)
 -   [정적 타이핑(Static Typing)과 동적 타이핑(Dynamic Typing)](Development-Common-Sense/static-dynamic-typing.md)
 
