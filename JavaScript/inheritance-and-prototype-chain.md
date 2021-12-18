@@ -77,68 +77,6 @@ console.log(p.m()); // 13
 
 <br>
 
-## 객체를 생성하는 여러 방법과 프로토타입 체인 결과
-
-### 문법 생성자로 객체 생성
-
-```javascript
-var o = { a: 1 };
-// o 객체는 프로토타입으로 Object.prorotype을 가집니다.
-// 이로 인해 o.hasOwnProperty('a') 같은 코드를 사용할 수 있습니다. hasOwnProperty라는 속성은 Object.prototype의 속성입니다.
-// Object.prototype의 프로토타입은 null입니다.
-// o ---> Object.prototype ---> null
-
-var a = ["yo", "whadup", "?"];
-// a ---> Array.prototype ---> Object.prototype ---> null
-
-function f() {
-    return 2;
-}
-// f ---> Function.prototype ---> Object.prototype ---> null
-```
-
-### 생성자를 이용
-
-JavaScript에서 생성자는 `new` 연산자를 사용해 함수를 호출하면 됩니다.
-
-```javascript
-function Graph() {
-    this.vertexes = [];
-    this.edges = [];
-}
-
-Graph.prototype = {
-    addVertex: function (v) {
-        this.vertexes.push(v);
-    },
-};
-
-var g = new Graph();
-// g는 'vertexes'와 'edges'를 속성으로 가지는 객체입니다.
-// g.[[Prototype]]은 Graph.prototype과 같은 값을 가집니다.
-```
-
-### `Object.create()` 이용
-
-ECMAScript 5부터 `Object.create()` 메소드를 호출하여 새로운 객체를 만들 수 있습니다. 생성된 객체의 프로토타입은 이 메소드의 첫 번째 인수로 지정됩니다.
-
-```javascript
-var a = { a: 1 };
-// a ---> Object.prototype ---> null
-
-var b = Object.create(a);
-// b ---> a ---> Object.prototype ---> null
-
-var c = Object.create(b);
-// c ---> b ---> a ---> Object.prototype ---> null
-
-var d = Object.create(null);
-// d ---> null
-console.log(d.hasOwnProperty); // undefined. d는 Object.prototype을 상속받지 않았기 때문입니다.
-```
-
-<br>
-
 ## 프로토타입 상속의 종류
 
 ### 위임형 상속(Delegation Inheritance)
