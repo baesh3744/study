@@ -98,3 +98,9 @@ console.log(foo.constructor === Person); // true
 // Person() 생성자 함수를 생성한 객체는 Function() 생성자 함수입니다.
 console.log(Person.constructor === Function); // true
 ```
+
+<br>
+
+## Reference
+
+-   [PoiemaWeb - "5.14 프로토타입"](https://poiemaweb.com/js-prototype)
