@@ -132,6 +132,7 @@
 -   [프로토타입(Prototype)](JavaScript/prototype.md)
 -   [프로토타입 체인(Prototype Chain)](JavaScript/prototype-chain.md)
 -   [실행 컨텍스트(Execution Context)](JavaScript/execution-context.md)
+-   [클래스(Class)](JavaScript/class.md)
 
 <br>
 
