@@ -58,13 +58,13 @@ Lookaround 문법에서 조건 그룹을 여러 개 줄 수 있습니다.
 
 Lookahead 문법의 경우, ES3에서 JavaScript 문법으로 등록되었기 때문에 모든 브라우저에서 지원합니다.
 
-<img width="1359" alt="caniuse.com - lookahead" src="https://media.oss.navercorp.com/user/29991/files/0630c559-c2cc-4141-85b6-88f772433cb2">
+<img width="1360" alt="https://caniuse.com/?search=lookahead" src="https://user-images.githubusercontent.com/22341362/173222557-3d9fe006-880f-4828-b578-e4a926b235bb.png">
 
 > https://caniuse.com/?search=lookahead
 
 [Lookbehind 문법은 ES2018에 새롭게 추가](https://medium.com/@xoor/whats-new-in-es2018-es9-a122b53e56a4)되어 Chrome, Firefox 등 대부분의 모던 브라우저에서는 지원합니다. 하지만 Webkit을 기반으로 하는 Safari와 Safari on iOS, IE 등에서는 아직 지원하지 않습니다.
 
-<img width="1360" alt="caniuse.com - lookbehind" src="https://media.oss.navercorp.com/user/29991/files/604f1b78-baf4-4d4b-b63f-4b176254af07">
+<img width="1360" alt="https://caniuse.com/?search=lookbehind" src="https://user-images.githubusercontent.com/22341362/173222555-74c7254f-0a4f-4718-8160-bc5d1c805e50.png">
 
 > https://caniuse.com/?search=lookbehind
 
