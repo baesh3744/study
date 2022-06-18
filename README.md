@@ -26,8 +26,9 @@
   - [트리의 지름(Diameter of tree)](algorithm/tree/diameter-of-tree.md)
 - DP
   - [배낭 문제(Knapsack Problem)](algorithm/dp/knapsack-problem.md)
+  - [최장 공통 부분수열 (LCS. Longest Common Subsequence)](algorithm/dp/longest-common-subsequence.md)
+  - [최장 증가 부분수열(LIS, Longest Increasing Subsequence)](algorithm/dp/longest-increasing-subsequence.md)
 - 기타
-  - [가장 긴 증가하는 부분수열(LIS, Longest Increasing Subsequence)](algorithm/etc/longest-increasing-subsequence.md)
   - [수학 지식을 이용한 알고리즘들](algorithm/etc/math.md)
   - [Union-Find](algorithm/etc/union-find.md)
 
