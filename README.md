@@ -203,6 +203,25 @@
 
 </details>
 
+<details>
+<summary>Patterns</summary>
+
+> https://www.patterns.dev/posts/
+
+- Design Patterns
+  - [Introduction](patterns/design-patterns/introduction.md)
+  - [Singleton Pattern](patterns/design-patterns/singleton-pattern.md)
+  - [Proxy Pattern](patterns/design-patterns/proxy-pattern.md)
+  - [Provider Pattern](patterns/design-patterns/provider-pattern.md)
+  - [Prototype Pattern](patterns/design-patterns/prototype-pattern.md)
+  - [Container/Presentational Pattern](patterns/design-patterns/container-presentational-pattern.md)
+  - [Observer Pattern](patterns/design-patterns/observer-pattern.md)
+  - [Module Pattern](patterns/design-patterns/module-pattern.md)
+- Rendering Patterns
+- Performance Patterns
+
+</details>
+
 ## 정리
 
 - 정규표현식
