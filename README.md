@@ -217,6 +217,7 @@
   - [Container/Presentational Pattern](patterns/design-patterns/container-presentational-pattern.md)
   - [Observer Pattern](patterns/design-patterns/observer-pattern.md)
   - [Module Pattern](patterns/design-patterns/module-pattern.md)
+  - [Mixin Pattern](patterns/design-patterns/mixin-pattern.md)
 - Rendering Patterns
 - Performance Patterns
 
