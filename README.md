@@ -155,8 +155,9 @@
 ## Gatsby
 
 - 라우팅
-  - [Creating Routes](Gatsby/routing/creating-routes.md)
-  - [`<Link>`](Gatsby/routing/Link-API.md)
+  - [Creating Routes](gatsby/routing/creating-routes.md)
+  - [`<Link>`](gatsby/routing/Link-API.md)
+- 설정 -[다른 레포지토리에서 파일 가져오기](gatsby/configs/get-files-from-other-repositories.md)
 
 ## React
 
