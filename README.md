@@ -163,13 +163,13 @@
 
 ## React
 
-- [재조정(Reconciliation)](React/reconciliation.md)
-- [Context](React/context.md)
-- [Hook](React/hook.md)
-- [Portal](React/portal.md)
-- [Ref와 DOM](React/ref-and-dom.md)
-- [Ref 전달하기](React/forwarding-refs.md)
-- [Strict Mode](React/strict-mode.md)
+- [재조정(Reconciliation)](react/reconciliation.md)
+- [Context](react/context.md)
+- [Hook](react/hook.md)
+- [Portal](react/portal.md)
+- [Ref와 DOM](react/ref-and-dom.md)
+- [Ref 전달하기](react/forwarding-refs.md)
+- [Strict Mode](react/strict-mode.md)
 
 ## 번역
 
