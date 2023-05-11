@@ -125,6 +125,9 @@
 - 제너레이터
   - [제너레이터(Generator)](javascript/generator/generator.md)
   - [async 이터레이터와 제너레이터](javascript/generator/async-iterator-generator.md)
+- 유틸함수
+  - 배열
+    - [removeDuplicates()](javascript/utils/array/remove-duplicates.md)
 
 ## 브라우저
 
